@@ -1,7 +1,7 @@
 import csv
 
 def save_all_contacts(all_contacts, file_name="All_Contacts.csv"):
-    """Saves all contacts to a CSV file."""
+
     if all_contacts:
         try:
             with open(file_name, "w", newline="") as file:
