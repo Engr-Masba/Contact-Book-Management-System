@@ -1,7 +1,6 @@
 import Add_Contact
 import View_All_Contacts
 import Delete_Contact
-import Update_Contacts
 import Load_Contacts
 import Search_Contact
 
@@ -15,8 +14,7 @@ while True:
     print("\t2. View All Contacts")
     print("\t3. Add Contact")
     print("\t4. Delete Contact")
-    print("\t5. Update Contact")
-    print("\t6. Reset Contact List")
+    print("\t5. Reset Contact List")
     print("\t0. Exit")
 
     menu = input("\nSelect any number: ")
@@ -30,8 +28,6 @@ while True:
     elif menu == "4":
         Delete_Contact.delete_contacts(All_Contacts)
     elif menu == "5":
-        Update_Contacts.update_contacts(All_Contacts)
-    elif menu == "6":
         confirm = input("\nAre you sure you want to reset all contacts? (yes/no): ").strip().lower()
         if confirm == "yes":
             All_Contacts.clear()
